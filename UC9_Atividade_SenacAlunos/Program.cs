@@ -7,6 +7,7 @@ string pesquisar = "";
 double total = 0;
 double conta1 = 0;
 double conta2 = 0;
+string preguica = "";
 
 while (controle != "b")
 {
@@ -33,6 +34,12 @@ while (controle != "b")
                 dados[uc, c++] = Console.ReadLine();
                 Console.WriteLine("=>Informe a duração da aula:");
                 dados[uc, c++] = Console.ReadLine();
+                Console.WriteLine("=>Deseja continuar? Caso sim, digite S \n=>Caso queira voltar ao menu, digite N");
+                preguica = Console.ReadLine();
+                if (preguica == "N" || preguica == "n")
+                {
+                    break;
+                }
             }
             break;
         case 2:
